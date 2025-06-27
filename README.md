@@ -185,6 +185,7 @@ Visit the portal at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 ## Credits
 
 Built using Django by **Md Rakibul Hassan**
+
 *CSE Undergraduate | Backend Developer | Robotics & IoT Enthusiast*
 
 🔗 [LinkedIn](https://www.linkedin.com/in/md-rakibul-hassan-507b00308)
