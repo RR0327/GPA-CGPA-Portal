@@ -110,4 +110,4 @@ Designed to help students calculate, visualize, and reflect on their academic pe
 
 This project is open source and available under the [MIT License](LICENSE).
 
-````
+---
