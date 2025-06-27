@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="CPA_GPA_Portal.png" width="300" alt="CPA_GPA_Portal">
+  <img src="CPA_GPA_Portal.png" width="500" alt="CPA_GPA_Portal">
 </p>
 
 <h1 align="center">GPA & CGPA Portal 🎓</h1>
@@ -18,7 +18,7 @@ A Django-based GPA & CGPA calculator portal where students can input semester-wi
 
 ---
 
-## ✨ Features
+## Features
 
 - 🔐 User registration and authentication
 - 📝 Add semesters with multiple subjects
@@ -77,7 +77,7 @@ Visit the portal at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Home-page
 ![Home-page](images/Home-page.png)
@@ -106,7 +106,7 @@ Designed to help students calculate, visualize, and reflect on their academic pe
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
