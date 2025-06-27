@@ -52,7 +52,7 @@ GPA = (Sum of (Grade Point x Credit Hours)) / Total Credit Hours.
 
 ---
 
-### 📌 Multi-Semester CGPA Calculation
+### Multi-Semester CGPA Calculation
 
 - Add results for multiple semesters
 - CGPA is calculated using:
