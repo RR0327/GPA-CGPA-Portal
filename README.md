@@ -11,7 +11,7 @@ A Django-based GPA & CGPA calculator portal where students can input semester-wi
 ## 📑 Table of Contents
 
 - [Features](#-features)
-- [Getting Started](#-getting-started)
+- [Getting Started](#-gettingstarted)
 - [Screenshots](#-screenshots)
 - [Credits](#-credits)
 - [License](#-license)
@@ -80,10 +80,10 @@ Visit the portal at: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 ## 📸 Screenshots
 
 ### Home-page
-![Home-page](images/home-page.png)
+![Home-page](images/Home-page.png)
 
 ### Register-page
-![Register-page](images/register-page.png)
+![Register-page](images/Register-page.png)
 
 ### Login-page
 ![Login-page](images/Login-page.png)
