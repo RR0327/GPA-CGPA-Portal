@@ -10,11 +10,11 @@ A Django-based GPA & CGPA calculator portal where students can input semester-wi
 
 ## 📑 Table of Contents
 
-- [Features](#-features)
-- [Getting Started](#-gettingstarted)
-- [Screenshots](#-screenshots)
-- [Credits](#-credits)
-- [License](#-license)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Screenshots](#screenshots)
+- [Credits](#credits)
+- [License](#license)
 
 ---
 
