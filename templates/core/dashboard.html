@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - GPA & CGPA Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>GPA CGPA Portal</strong></a>
+            <div>
+                <span class="navbar-text me-3">Hello, {{ user.username }}!</span>
+                <a href="{% url 'logout' %}" class="btn btn-outline-light btn-sm">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="mb-4">Your Semester Results</h1>
+
+        {% if semesters %}
+        <table class="table table-striped table-bordered">
+            <thead class="table-primary">
+                <tr>
+                    <th>Semester</th>
+                    <th>GPA</th>
+                    <th>Total Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sem in semesters %}
+                <tr>
+                    <td>{{ sem.semester_name }}</td>
+                    <td>{{ sem.gpa }}</td>
+                    <td>{{ sem.total_credits }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="mt-4 p-4 bg-white rounded shadow-sm">
+            <h3>Your CGPA: <span class="text-success">{{ cgpa }}</span></h3>
+            <p><strong>CGPA Feedback:</strong> {{ cgpa_feedback }}</p>
+            <hr />
+            <h4>Latest Semester GPA Feedback:</h4>
+            <p>{{ gpa_feedback }}</p>
+        </div>
+        {% else %}
+        <div class="alert alert-warning">You haven't added any semester results yet.</div>
+        {% endif %}
+
+        <a href="{% url 'add_semester' %}" class="btn btn-primary mt-3">Add New Semester</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
