@@ -10,11 +10,100 @@ A Django-based GPA & CGPA calculator portal where students can input semester-wi
 
 ## 📑 Table of Contents
 
+- [Project Overview](#project-overview)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Screenshots](#screenshots)
 - [Credits](#credits)
 - [License](#license)
+
+---
+
+## Project Overview
+
+### Goal
+
+Build a web application where students can:
+
+- Add semester-wise subject results
+- Get calculated GPA for each semester
+- Track their cumulative CGPA across multiple semesters
+- Receive dynamic guidance based on their performance
+
+---
+
+### Tech Stack
+
+- **Backend**: Python, Django
+- **Frontend**: HTML, CSS, JavaScript (with Bootstrap)
+- **Database**: SQLite (Django default, switchable)
+- **Optional Tools**: Chart.js for visual GPA/CGPA graphs
+
+---
+
+## Core Features
+
+### Student GPA Entry per Semester
+
+- Students can enter grades and credits for each subject.
+- GPA is automatically calculated using:
+
+GPA = (Sum of (Grade Point x Credit Hours)) / Total Credit Hours.
+
+---
+
+### 📌 Multi-Semester CGPA Calculation
+
+- Add results for multiple semesters
+- CGPA is calculated using:
+
+- CGPA formula:
+
+CGPA = {Sum of (GPA × Credit of that semester)} / Total Credits across all semesters.
+
+---
+
+### Guidance System Based on GPA/CGPA
+
+Feedback is provided based on academic performance:
+
+| Score Range       | Feedback               |
+|-------------------|------------------------|
+| GPA/CGPA ≥ 3.75   |Excellent            |
+| GPA/CGPA ≥ 3.00   | Good                |
+| GPA/CGPA ≥ 2.00   | Improvement   |
+| GPA/CGPA < 2.00   | At Risk – Get Help  |
+
+---
+
+### Authentication
+
+- Student registration/login to securely save results
+- Django Admin Panel for management (admin only)
+
+---
+
+### User Interface
+
+- Responsive and clean design using Bootstrap
+- Real-time GPA result display with feedback
+- Edit/Delete semester entries anytime
+
+---
+
+## Main Components
+
+| Component           | Description                                   |
+|---------------------|-----------------------------------------------|
+| `Student Model`     | Stores student (user) info                    |
+| `SemesterResult`    | Stores GPA + total credit per semester        |
+| `Subject Model`     | Stores individual course marks and credits    |
+| `GPA Calculator`    | Backend logic to compute GPA                  |
+| `CGPA Calculator`   | Backend logic to compute CGPA                 |
+| `Feedback System`   | Guidance messages based on GPA/CGPA           |
+| `Forms & Views`     | Handles input and rendering in Django         |
+| `Templates`         | HTML + Bootstrap for UI                       |
+| `JavaScript`        | For interactive elements (optional)           |
 
 ---
 
