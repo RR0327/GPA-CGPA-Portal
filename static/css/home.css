@@ -1,0 +1,26 @@
+/* static/css/home.css */
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}

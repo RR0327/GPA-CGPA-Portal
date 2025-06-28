@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Delete Semester - GPA Portal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    {% load static %}
+    <link href="{% static 'css/delete_semester.css' %}" rel="stylesheet" />
 </head>
 
 <body class="bg-light">
@@ -33,19 +34,3 @@
 </body>
 
 </html>
-
-<!-- Visit Pages:
-
-http://127.0.0.1:8000/ → Home
-
-http://127.0.0.1:8000/register/ → Sign up
-
-http://127.0.0.1:8000/login/ → Log in
-
-http://127.0.0.1:8000/dashboard/ → View GPA/CGPA
-
-http://127.0.0.1:8000/add-semester/ → Add new semester
-
-http://127.0.0.1:8000/edit-semester/<id>/ → Edit existing
-
-http://127.0.0.1:8000/delete-semester/<id>/ → Delete semester -->

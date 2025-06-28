@@ -1,0 +1,67 @@
+/* static/css/add_semester.css */
+body {
+    background-color: #448fdb;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.container {
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #007bffbf;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(112, 6, 148, 0.799);
+}
+
+button[type="submit"] {
+    background-color: #097479;
+    color: rgb(7, 6, 94);
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #0f6388;
+}
