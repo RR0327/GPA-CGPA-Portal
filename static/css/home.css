@@ -1,26 +1,64 @@
 /* static/css/home.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* 1) ensure full-height */
+html,
 body {
-    background-color: #f8f9fa;
+    height: 100%;
+    margin: 0;
+}
+
+/* 2) background covers entire viewport */
+body.home-page {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-image: url('../images/home_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 3) overlay card */
+.home-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10vh auto 0 auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 100px;
+.home-container h1 {
+    color: #fff;
+    margin-bottom: 1.5rem;
 }
 
-a {
+.home-container a {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
     background-color: #007bff;
-    border-radius: 5px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color .3s;
 }
 
-a:hover {
+.home-container a:hover {
     background-color: #0056b3;
+}
+
+/* 4) on small screens use scroll attachment & shift overlay down */
+@media (max-width: 768px) {
+    body.home-page {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
+    .home-container {
+        margin-top: 20vh;
+        width: 95%;
+    }
 }

@@ -1,20 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Login</title>
-    {% load static %}
-    <link href="{% static 'css/login.css' %}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>Login – GPA & CGPA Portal</title>
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
 </head>
 
-<body>
-    <h2>Login</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
+<body class="login-page">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.username.label_tag }}<br>
+            {{ form.username }}<br>
+            {{ form.password.label_tag }}<br>
+            {{ form.password }}<br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 
 </html>
